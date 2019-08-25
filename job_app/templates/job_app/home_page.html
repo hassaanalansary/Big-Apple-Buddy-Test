@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'job_app/home_page.css' %}">
+    <meta charset="UTF-8">
+    <title>Welcome to Test App</title>
+</head>
+<body>
+<h1 style="font-size: 70px ;">Hello <b style="color:#2ecc71">Big Apple Buddy</b> People!</h1>
+<h2>Hope you like what you see</h2>
+<h2>Looking forward to working with you</h2>
+<h4>by Hassaan Alansary</h4>
+<a href="{% url 'job_app:view1' %} " class="btn-sexy purple">
+    View 1
+</a>
+<a href="{% url 'job_app:view2' %}" class="btn-sexy purple">
+    View 2
+</a>
+</body>
+</html>
